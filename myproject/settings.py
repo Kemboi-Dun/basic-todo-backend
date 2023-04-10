@@ -39,14 +39,7 @@ SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG')
 
 
-
-ALLOWED_HOSTS=['https://basic-todo-backend-production.up.railway.app']
-
-CORS_ORIGIN_ALLOW_ALL = False
-
-CORS_ORIGIN_WHITELIST = (
-       'https://basic-todo-backend-production.up.railway.app',
-)
+ALLOWED_HOSTS = ['*']
 # CORS_ALLOWED_ORIGINS = [
 #     "https://basic-todo-backend-production.up.railway.app",
 #     "http://localhost:8000",
