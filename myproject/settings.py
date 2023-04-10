@@ -40,6 +40,12 @@ DEBUG = env('DEBUG')
 
 
 ALLOWED_HOSTS = ['*']
+# CORS_ALLOWED_ORIGINS = [
+#     "https://basic-todo-backend-production.up.railway.app",
+#     "http://localhost:8000",
+# ]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 
 # Application definition
@@ -66,13 +72,6 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
-
-CORS_ALLOWED_ORIGINS = [
-    "https://basic-todo-backend-production.up.railway.app",
-    "http://localhost:8000",
-]
-
-CORS_ORIGIN_ALLOW_ALL = False
 
 ROOT_URLCONF = "myproject.urls"
 
